@@ -222,7 +222,7 @@ Al no contar con una herramienta estadística predictiva formalizada, las órden
 
 Para subsanar las falencias del análisis previo, se extrajo el registro histórico real correspondiente a la demanda consolidada mensual de cajas de Aceite Primor 1L despachadas al canal de distribuidores exclusivos durante los primeros 8 meses del año en curso:
 
-Table:Tabla 1
+
 | Período (Mes) | Demanda Histórica (Y) (Cajas) |
 | :--- | :--- |
 | 1. enero | 12,000 |
@@ -257,7 +257,7 @@ Para identificar las variables críticas que originan las fallas en el despacho 
 
 A partir del diagnóstico anterior, se define conceptualmente el problema de la siguiente manera:
 
->**¿De qué manera la selección e implementación de un método de pronóstico cuantitativo  óptimo contribuirá a la estabilización del planeamiento de la producción y a la reducción de sobrecostos logísticos en la línea de consumo masivo de Alicorp S.A.A.?**
+
 
 ##  3.2. HACER (DO): Elaboración de Planes de Acción (5W-2H) 
 
@@ -291,7 +291,7 @@ graph LR
     style Alicorp fill:#ff0000,stroke:#333,color:#fff
 ```
 
-Table:Tabla 2
+
 | ¿Qué? | ¿Por qué? | ¿Quién? | ¿Cuándo y ¿Dónde? | ¿Cómo y Cuánto? |
 | :--- | :--- | :--- | :--- | :--- |
 | Implementar y estandarizar un modelo de pronóstico de demanda | Mitigar el error de previsión operativa | Analista de Planeamiento de Operaciones | Ejecución en un plazo de 30 días calendario | Desarrollando un algoritmo matricial que evalúe y compare dinámicamente los modelos de Promedio Móvil y regresión Lineal, calculando sus desvíos de manera mensual. |
@@ -313,10 +313,10 @@ Para definir científicamente cuál es el modelo adecuado, la rúbrica exige la 
 
 - Desviación Media Absoluta (MAD): Mide la magnitud del error promedio en las mismas unidades de la serie.
 
-$$F_{t + 1} = \frac{\sum_{i = 0}^{n - 1}D_{t - i}}{n}$$
+$$F_{t + 1} = \frac{\sum_{i = 0}^{n - 1}D_{t - i}}{n}$$    
 
-> Donde: n = Número de observaciones, Y= Valor real. ${\widehat{Y}}_{i}$
-> = Valor predicho por el modelo.
+Donde: n = Número de observaciones, Y= Valor real. ${\widehat{Y}}_{i}$
+Valor predicho por el modelo.
 
 - El Error Cuadrático (SE) para una sola observación es simplemente el
   cuadrado de la diferencia:
@@ -348,7 +348,7 @@ $$SE = \left( Y - \widehat{Y} \right)^{2}$$
 
    $$F_{t + 1} = \frac{D_{t} + D_{t - 1} + D_{t - 2}}{3}$$
 
-Table:
+
 | Mes (t) | Demanda (Dt) | Pronóstico (Pt) | Error Absoluto \|Dt - Pt\| | Error Cuadrático (Dt - Pt)^2 |
 | :--- | :---: | :---: | :---: | :---: |
 | Enero | 12000 | - | - | - |
@@ -368,7 +368,7 @@ Table:
 
   - **Evaluación de Modelo 2: Regresión Lineal Simple**
 
-Table:
+
 | Mes (X) | Demanda Real (Y) | Pronóstico (Y) | Err. Abs | Err. Cuad |
 | :----: | :----: | :----: | :----: | :----: |
 | 1 | 12000 | 11991.67 | 8.33 | 69.44 |
@@ -406,7 +406,7 @@ Al aplicar el modelo de Regresión Lineal Simple para los 8 meses de datos hist�
 
 - **Evaluación del Error (Precisión del Modelo):**
 
-Table:
+
 | Mes | Demanda (Dt) | Pronóstico (Pt) | Error Absoluto | Error Cuadrático |
 |------|-------------:|----------------:|---------------:|-----------------:|
 | Enero   | 12000 | -     | -    | - |
@@ -475,7 +475,6 @@ Asimismo, se observó que la demanda de Aceite Primor 1L presenta una tendencia 
 
 Para mejorar el desempeño operativo, se plantearon las siguientes alternativas:
 
-Table: Tabla 3 Alternativas de Solución
 | Alternativa | Descripción |
 | :--- | :--- |
 | Implementación de pronósticos estadísticos | Aplicación de modelos matemáticos como regresión lineal y promedio móvil |
@@ -484,7 +483,7 @@ Table: Tabla 3 Alternativas de Solución
 | Capacitación del personal | Formación en análisis estadístico y planeamiento |
 | Mejora del flujo logístico | Reducción de tiempos muertos en distribución |
 
->Nota: Después de evaluar las alternativas, se determinó que la implementación de modelos de pronóstico estadístico complementados con herramientas de control operativo representa la solución más viable técnica y económicamente.
+Nota: Después de evaluar las alternativas, se determinó que la implementación de modelos de pronóstico estadístico complementados con herramientas de control operativo representa la solución más viable técnica y económicamente.
 
 ## 4.4 Desarrollo de la Propuesta de Mejora 
 
@@ -573,7 +572,7 @@ Debido a ello, la empresa requiere integrar herramientas de control de calidad q
 
 Para el mejoramiento de los procesos operacionales de la línea Aceite Primor 1L, se han seleccionado **3 herramientas de mejora continua** que permiten identificar, analizar y corregir desviaciones en la operación:
 
-Table:
+
 | Herramienta | Aplicación en la línea Aceite Primor 1L |
 | :--- | :--- |
 | **PHVA (Ciclo de Deming)** | Mejora continua de operaciones, estandarización de procedimientos y corrección de desviaciones. |
@@ -586,7 +585,6 @@ Table:
 
 El ciclo PHVA se aplica de la siguiente manera en el proceso de dosificación y envasado:
 
-Table:
 | Fase | Acción | Responsable |
 | :--- | :--- | :--- |
 | **Planificar** | Identificar causas de variación en el llenado (volumen exacto de 1L) mediante análisis de datos históricos. | Jefe de Producción |
@@ -594,14 +592,13 @@ Table:
 | **Verificar** | Medir la desviación estándar del volumen después del ajuste durante 5 turnos. | Control de Calidad |
 | **Actuar** | Estandarizar el nuevo procedimiento de calibración y actualizar el check list operacional. | Jefe de Calidad |
 
->Resultado esperado: Reducción de la desviación en el llenado de ±5 ml a ±2 ml, mejorando la precisión del producto final.
+Resultado esperado: Reducción de la desviación en el llenado de ±5 ml a ±2 ml, mejorando la precisión del producto final.
 
 ### 5.2.2 Aplicación del Diagrama de Ishikawa para Identificar Causas de Error en el Pronóstico
 
 El siguiente análisis de causa-efecto (Ishikawa) identifica las principales causas que afectan la exactitud del pronóstico de demanda de Aceite Primor 1L:
 
 
-Table:
 | Categoría | Causa raíz | Efecto | Acción correctiva propuesta |
 | :--- | :--- | :--- | :--- |
 | **Método** | Modelo de pronóstico inadecuado para tendencia alcista | Subestimación de la demanda | Implementar Regresión Lineal |
@@ -696,7 +693,6 @@ La ubicación permite optimizar los procesos de producción, almacenamiento y di
 
 Para validar la localización operativa se analizaron los siguientes factores:
 
-Table:Tabla 7
 | Factor | Evaluación | Checklist |
 | :--- | :--- | :---: |
 | Acceso a proveedores | Favorable | [x] |
@@ -707,13 +703,12 @@ Table:Tabla 7
 | Acceso al puerto | Muy favorable | [x] |
 | Distribución nacional | Favorable | [x] |
 
-> El análisis demuestra que la ubicación actual permite mantener un > flujo eficiente de operaciones y reducir tiempos logísticos.
+ El análisis demuestra que la ubicación actual permite mantener un > flujo ficiente de operaciones y reducir tiempos logísticos.
 
 ## 6.3 Método de Evaluación de Localización 
 
 Se aplicó el método de factores ponderados para evaluar la conveniencia de la planta del Callao frente a otras posibles ubicaciones.
 
-Table: Tabla 8 de Factores Ponderados:
 
 | Factor | Peso (%) | Callao | Lurín | Ate |
 | :--- | :---: | :---: | :---: | :---: |
@@ -723,7 +718,7 @@ Table: Tabla 8 de Factores Ponderados:
 | Mano de obra | 15% | 9 | 8 | 8 |
 | Distribución | 10% | 10 | 7 | 8 |
 
-Table:Tabla 9 Resultado ponderado:
+
 | Ubicación | Puntaje |
 | :--- | :---: |
 | Callao | 9.4 |
@@ -805,7 +800,6 @@ considerando:
 
 La capacidad instalada corresponde al volumen máximo de producción que puede generar la línea automatizada trabajando al 100% de surendimiento.
 
-Table: Tabla 10
 | Concepto | Valor |
 | :--- | :--- |
 | Producción por hora | 2,000 cajas |
@@ -850,7 +844,6 @@ La capacidad real disponible continúa siendo suficiente para cubrir la demanda 
 
 El almacén principal de productos terminados cuenta con la siguiente capacidad.
 
-Table: Tabla 11: Capacidad de Almacenamiento
 | Concepto | Valor |
 | :--- | :--- |
 | Área útil de almacenamiento | 3,500 m² |
@@ -867,7 +860,6 @@ La empresa utiliza un sistema FIFO para garantizar:
 
 La distribución se realiza mediante flota tercerizada y unidades propias.
 
-Table: Tabla 12: Distribución diaria
 | Concepto | Valor |
 | :--- | :--- |
 | Camiones diarios | 18 unidades |
@@ -958,7 +950,6 @@ Donde:
 - **Calidad** = Unidades buenas / Unidades totales
 
 
-Table: Tabla OEE
 | Componente | Fórmula | Valor Actual |
 | :--- | :--- | :--- |
 | Disponibilidad | Tiempo operativo / Tiempo planificado | 85% |
